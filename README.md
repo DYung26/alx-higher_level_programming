@@ -1,6 +1,6 @@
 # 0x00. Python - Hello, World
 
-## Zen
+Zen
 ```python
 The Zen of Python, by Tim Peters
 
