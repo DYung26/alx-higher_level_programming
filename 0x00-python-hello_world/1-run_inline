@@ -1,2 +1,2 @@
 #!/bin/bash
-eval python3 && eval $PYCODE
+eval python3 << $PYCODE
