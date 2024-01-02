@@ -1,2 +1,2 @@
 #!/bin/bash
-eval python "$PYFILE"
+eval 'python3 "$PYFILE"'
