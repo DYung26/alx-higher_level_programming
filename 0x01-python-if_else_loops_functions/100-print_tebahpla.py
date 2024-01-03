@@ -5,7 +5,7 @@ while i > 65:
     print("{}".format(char), end="")
     i -= 1
     if ord(char) - ord('a') >= 0:
-    	i -= 32
+        i -= 32
     else:
         i += 32
 char = chr(i)
