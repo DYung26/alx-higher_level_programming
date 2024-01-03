@@ -4,6 +4,6 @@ for i in range(10):
     for k in range(j, 10):
         if i != k:
             if f"{i}{k}" == '89':
-                print(f"{i}{k}")
+                print("{}{}".format(i, k))
             else:
-                print(f"{i}{k}", end=", ")
+                print("{}{}".format(i, k), end=", ")
