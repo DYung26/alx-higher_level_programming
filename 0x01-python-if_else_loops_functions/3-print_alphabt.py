@@ -4,4 +4,4 @@ for i in "abcdefghijklmnopqrstuvwxyz":
         continue
     if i == 'e':
         continue
-    print(i, end='')
+    print("{}".format(i), end='')
