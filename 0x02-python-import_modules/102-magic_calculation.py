@@ -10,7 +10,3 @@ def magic_calculation_102(a, b):
         return c
     else:
         return sub(a, b)
-
-# Test the function
-result = magic_calculation_102(3, 5)
-print(result)
