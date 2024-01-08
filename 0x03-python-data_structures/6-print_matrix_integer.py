@@ -2,10 +2,11 @@
 def print_matrix_integer(matrix=[[]]):
     if matrix:
         for y in matrix:
-            for x in range(len(y)):
-                if x == len(y)-1:
-                    print("{:d}".format(y[x]))
-                else:
-                    print("{:d}".format(y[x]), end=" ")
+            if y:
+                for x in range(len(y)):
+                    if x == len(y)-1:
+                        print("{:d}".format(y[x]))
+                    else:
+                        print("{:d}".format(y[x]), end=" ")
     else:
         print("\n")
