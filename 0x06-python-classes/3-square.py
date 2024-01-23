@@ -5,6 +5,7 @@ Args: None
 Attributes: None
 """
 
+
 class Square:
     """
     Args:
