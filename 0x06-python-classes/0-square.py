@@ -3,6 +3,8 @@
 """
 Attributes: None
 """
+
+
 class Square():
     """
     Args: None
