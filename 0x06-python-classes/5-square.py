@@ -44,7 +44,8 @@ class Square:
 
     def my_print(self):
         """
-    
+        Attributes:
+            size (int): length of square
         """
         if self.__size == 0:
             print("")
