@@ -73,6 +73,9 @@ class Square:
         """
         Attributes:
             size (int): length of square
+            lj (int): ...
+            k (int): ...
+            i (int): ...
         """
         if self.__size == 0:
             print("")
