@@ -15,11 +15,13 @@ class Node:
 
     def __init__(self, data, next_node=None):
         """
-        The __init__ method initializes attributes that are instantiated whenever an object is created
+        The __init__ method initializes attributes thata
+        re instantiated whenever an object is created
 
         Args:
             data (int): Integer held by the node.
-            next_node (:obj:`Node`, optional): Pointer to the next node. Defaults to None.
+            next_node (:obj:`Node`, optional): Pointer to the next node.
+            Defaults to None.
 
         Raises:
             TypeError: If the data provided is not an integer
