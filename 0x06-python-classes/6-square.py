@@ -46,6 +46,8 @@ class Square:
         """
         Args: None
         Attributes: None
+        Returns:
+            position
         """
         return self.__position
 
