@@ -15,7 +15,8 @@ class Square:
     """
     def __init__(self, size=0, position=(0, 0)):
         """
-        The __init__ method initializes attributes whenever an object is instantiated.
+        The __init__ method initializes attributes
+        whenever an object is instantiated.
 
         Args:
             size (int): Length of one side of the square.
@@ -61,7 +62,6 @@ class Square:
     def size(self, value):
         """
         Setter method that sets the size of the square.
-        
         """
         if not isinstance(value, int):
             raise TypeError("size must be an integer")
