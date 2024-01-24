@@ -81,11 +81,15 @@ class Square:
                 print("")
             else:
                 pass
-            j = 0
-            while j < self.__size:
+            l = 0
+            while l < self.__size:
+                k = 0
+                while k < self.__position[0]:
+                    print("_", end="")
+                    k += 1
                 i = 0
                 while i < self.__size:
                     print("#", end="")
                     i += 1
-                j += 1
                 print("")
+                l += 1
