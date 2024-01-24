@@ -88,7 +88,7 @@ class Square:
             while lj < self.__size:
                 k = 0
                 while k < self.__position[0]:
-                    print("_", end="")
+                    print(" ", end="")
                     k += 1
                 i = 0
                 while i < self.__size:
