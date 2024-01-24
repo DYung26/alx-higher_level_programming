@@ -58,7 +58,7 @@ class Square:
         Attributes:
             position (tuple): ...
         """
-        if not isinstance(position, tuple) and len(position) == 2:
+        if not isinstance(value, tuple) and len(value) == 2:
             raise TypeError("position must be a tuple of 2 positive integers")
         else:
             self.__position = value
