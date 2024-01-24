@@ -60,7 +60,7 @@ class Square:
         if not isinstance(position, tuple) and len(position) == 2:
             raise TypeError("position must be a tuple of 2 positive integers")
         else:
-            self.__position = position
+            self.position = position
 
     def area(self):
         """
@@ -80,14 +80,14 @@ class Square:
         if self.__size == 0:
             print()
         else:
-            if self.__position[1] > 0 and len(self.__position) == 2:
+            if self.position[1] > 0 and len(self.position) == 2:
                 print()
             else:
                 pass
             lj = 0
             while lj < self.__size:
                 k = 0
-                while k < self.__position[0]:
+                while k < self.position[0]:
                     print(" ", end="")
                     k += 1
                 i = 0
