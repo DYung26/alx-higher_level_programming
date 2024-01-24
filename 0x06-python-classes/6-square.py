@@ -61,7 +61,6 @@ class Square:
     def size(self, value):
         """
         Setter method that sets the size of the square.
-        
         """
         if not isinstance(value, int):
             raise TypeError("size must be an integer")
@@ -78,6 +77,7 @@ class Square:
         else:
             for i in range(self.size):
                 print("#" * self.__size)
+
     def my_print(self):
         """
         Prints a square made of #
