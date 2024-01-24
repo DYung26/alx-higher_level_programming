@@ -58,6 +58,6 @@ class Square:
                 i = 0
                 while i < self.__size:
                     print("#", end="")
-                    i+=1
-                j+=1
+                    i += 1
+                j += 1
                 print("")
