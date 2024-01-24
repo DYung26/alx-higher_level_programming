@@ -78,10 +78,10 @@ class Square:
             i (int): ...
         """
         if self.__size == 0:
-            print("")
+            print()
         else:
             if self.__position[1] > 0 and len(self.__position) == 2:
-                print("")
+                print()
             else:
                 pass
             lj = 0
