@@ -57,7 +57,7 @@ class Square:
         Attributes:
             position (tuple): ...
         """
-        if not isinstance(position, tuple) and len(position) == 2 and all(isinstance(elem, int) for elem in position):
+        if not isinstance(position, tuple) and len(position) == 2:
             raise TypeError("position must be a tuple of 2 positive integers")
         else:
             self.__position = position
@@ -81,8 +81,8 @@ class Square:
                 print("")
             else:
                 pass
-            l = 0
-            while l < self.__size:
+            lj = 0
+            while lj < self.__size:
                 k = 0
                 while k < self.__position[0]:
                     print("_", end="")
@@ -92,4 +92,4 @@ class Square:
                     print("#", end="")
                     i += 1
                 print("")
-                l += 1
+                lj += 1
