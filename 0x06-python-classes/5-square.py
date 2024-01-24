@@ -9,9 +9,9 @@ Attributes: None
 class Square:
     """
     Args:
-        size (int): lenght of square
+        size (int): length of square
     Attributes:
-        size (int): lenght of square
+        size (int): length of square
     """
     def __init__(self, size=0):
         self.__size = size
@@ -27,7 +27,10 @@ class Square:
     @size.setter
     def size(self, value):
         """
-
+        Args:
+        value (int): userInputted length of square
+    Attributes:
+        value (int): userInputted length of square
         """
         if not isinstance(value, int):
             raise TypeError("size must be an integer")
