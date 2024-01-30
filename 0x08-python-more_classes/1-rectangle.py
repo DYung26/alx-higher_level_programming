@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 """
+Args: None
 Attributes: None
 """
 
@@ -17,6 +18,7 @@ class Rectangle:
     """
 
     def __init__(self, width=0, height=0):
+        """Initializes a new instance of the Rectangle class."""
         self.__height = height
         self.__width = width
 
