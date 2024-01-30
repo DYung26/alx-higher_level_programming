@@ -10,12 +10,13 @@ class Rectangle:
     """
     Represents a rectangle with specified width and height.
 
-    Attributes:
-        __width (int): width of Rectangle
-        __height (int): height of Rectangle
     Args:
         width (int, optional): The width of the rectangle. Defaults to 0.
         height (int, optional): The height of the rectangle. Defaults to 0.
+
+    Attributes:
+        __width (int): width of Rectangle
+        __height (int): height of Rectangle
     """
 
     def __init__(self, width=0, height=0):
@@ -29,7 +30,7 @@ class Rectangle:
         Gets the width of the rectangle.
 
         Returns:
-            width (int): The width of the rectangle.
+            int: The width of the rectangle.
         """
         return self.__width
 
@@ -57,7 +58,7 @@ class Rectangle:
         Gets the height of the rectangle.
 
         Returns:
-            height (int): The height of the rectangle.
+            int: The height of the rectangle.
         """
         return self.__height
 
