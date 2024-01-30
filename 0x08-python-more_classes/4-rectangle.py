@@ -28,8 +28,10 @@ class Rectangle:
         """
         Returns a string rep. of the rectangle using '#' characters.
 
-        The resulting string represents a visual depiction of the rectangle,        where each '#' character corresponds to one unit of width,
-        and newline characters separate each row of the rectangle.
+        The resulting string represents a visual depiction of the
+        rectangle, where each '#' character corresponds to
+        one unit of width, and newline characters separate each row
+        of the rectangle.
 
         Returns:
             str: A string repping the visual rep. of the rectangle.
@@ -45,6 +47,15 @@ class Rectangle:
 
     def __repr__(self):
         """
+        Returns a string representation of the rectangle
+        suitable for debugging and development purposes.
+
+        The returned string includes the class name and the values of width
+        and height.
+
+        Returns:
+            str: A string representation of the rectangle, in the format
+            "Rectangle(width, height)".
         """
         return "Rectangle(" + str(self.width) + ", " + str(self.height) + ")"
 
