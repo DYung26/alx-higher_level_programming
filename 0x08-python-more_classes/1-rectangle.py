@@ -9,8 +9,8 @@ class Rectangle:
     Represents a rectangle with specified width and height.
 
     Attributes:
-        __width (int): width of Rectangle
-        __height (int): height of Rectangle
+        width (int): width of Rectangle
+        height (int): height of Rectangle
     Args:
         width (int, optional): The width of the rectangle. Defaults to 0.
         height (int, optional): The height of the rectangle. Defaults to 0.
