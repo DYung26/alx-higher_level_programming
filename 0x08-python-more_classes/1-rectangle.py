@@ -28,7 +28,7 @@ class Rectangle:
         Gets the width of the rectangle.
 
         Returns:
-            int: The width of the rectangle.
+            width (int): The width of the rectangle.
         """
         return self.__width
 
@@ -56,7 +56,7 @@ class Rectangle:
         Gets the height of the rectangle.
 
         Returns:
-            int: The height of the rectangle.
+            height (int): The height of the rectangle.
         """
         return self.__height
 
