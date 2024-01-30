@@ -12,8 +12,8 @@ class Rectangle:
         width (int): width of Rectangle
         height (int): height of Rectangle
     Args:
-        width (int, optional): The width of the rectangle. Defaults to 0.
-        height (int, optional): The height of the rectangle. Defaults to 0.
+        width (int): The width of the rectangle. Defaults to 0.
+        height (int): The height of the rectangle. Defaults to 0.
     """
 
     def __init__(self, width=0, height=0):
