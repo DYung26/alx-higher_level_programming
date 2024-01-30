@@ -9,19 +9,19 @@ class Rectangle:
     Represents a rectangle with specified width and height.
 
     Attributes:
-        width (int): width of Rectangle
-        height (int): height of Rectangle
+        __width (int): width of Rectangle
+        __height (int): height of Rectangle
     Args:
-        width (int): The width of the rectangle. Defaults to 0.
-        height (int): The height of the rectangle. Defaults to 0.
+        width (int, optional): The width of the rectangle. Defaults to 0.
+        height (int, optional): The height of the rectangle. Defaults to 0.
     """
 
     def __init__(self, width=0, height=0):
         """
         Initializes a new instance of the Rectangle class.
         """
-        self.__width = width
         self.__height = height
+        self.__width = width
 
     @property
     def width(self):
