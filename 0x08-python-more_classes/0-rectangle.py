@@ -6,4 +6,8 @@ Args: None
 
 
 class Rectangle:
+    """
+    Attributes: None
+    Args: None
+    """
     pass
