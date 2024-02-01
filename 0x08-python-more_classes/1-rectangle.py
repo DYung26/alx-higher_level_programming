@@ -15,8 +15,8 @@ class Rectangle:
         height (int, optional): The height of the rectangle. Defaults to 0.
 
     Attributes:
-        __width (int): width of Rectangle
-        __height (int): height of Rectangle
+        width (int): width of Rectangle
+        height (int): height of Rectangle
     """
 
     def __init__(self, width=0, height=0):
