@@ -47,14 +47,9 @@ class Rectangle:
         for i in range(self.__height):
             if self.__width == 0 or self.__height == 0:
                 return a
-            if isinstance(self.print_symbol, str):
-                a += self.print_symbol * self.__width
-                if i != self.__height - 1:
-                    a += "\n"
-            elif isinstance(self.print_symbol, list):
-                for i in range(self.__width):
-                    print(self.print_symbol, end="")
-                # print("")
+            a += str(self.print_symbol) * self.__width
+            if i != self.__height - 1:
+                a += "\n"
         return str(a)
 
     def __repr__(self):
