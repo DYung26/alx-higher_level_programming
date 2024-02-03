@@ -4,6 +4,8 @@ Functions:
     add_integer(a, b=98): Adds two numbers and returns the result.
 If executed as a standalone script, it runs doctests from the 0-add_integer.txt file.
 """
+
+
 def add_integer(a, b=98):
     """Returns:
         int: The sum of the two input numbers, a and b, as an integer.
