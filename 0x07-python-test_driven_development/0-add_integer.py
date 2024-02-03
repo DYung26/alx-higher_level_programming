@@ -2,7 +2,6 @@
 """Defines the add_integer function.
 Functions:
     add_integer(a, b=98): Adds two numbers and returns the result.
-If executed as a standalone script, it runs doctests from the 0-add_integer.txt file.
 """
 
 
