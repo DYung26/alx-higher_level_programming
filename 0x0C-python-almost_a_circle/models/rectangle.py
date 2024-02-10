@@ -75,4 +75,23 @@ class Rectangle(Base):
             print("#" * self.__width)
 
     def update(self, *args):
-        
+        try:
+            self.id = args[0]
+        except IndexError:
+            pass
+        try:
+            self.__width = args[1]
+        except IndexError:
+            pass
+        try:
+            self.__height = args[2]
+        except IndexError:
+            pass
+        try:
+            self.__x = args[3]
+        except IndexError:
+            pass
+        try:
+            self.__y = args[4]
+        except IndexError:
+            pass
