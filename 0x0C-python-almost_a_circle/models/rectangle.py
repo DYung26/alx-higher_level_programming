@@ -8,6 +8,7 @@ from models.base import Base
 class Rectangle(Base):
     """
         Attributes:
+            width: (int)
         Args:
     """
     def __init__(self, width, height, x=0, y=0, id=None):
@@ -22,7 +23,8 @@ class Rectangle(Base):
         self.__y = y
 
     def __str__(self):
-        return f"[Rectangle] ({self.id}) {self.__x}/{self.__y} - {self.__width}/{self.__height}"
+        return (f"[Rectangle] ({self.id}) {self.__x}/{self.__y}"
+                f"- {self.__width}/{self.__height}")
 
     @staticmethod
     def __check(value, attributeName):
