@@ -1,8 +1,17 @@
 #!/usr/bin/python3
+"""
+rectangle module
+"""
 from models.base import Base
 
 
 class Rectangle(Base):
+    """
+        Attributes:
+
+        Args:
+            
+    """
     def __init__(self, width, height, x=0, y=0, id=None):
         self.__check(width, "width")
         self.__check(height, "height")
@@ -74,24 +83,37 @@ class Rectangle(Base):
             print(" " * self.__x, end="")
             print("#" * self.__width)
 
-    def update(self, *args):
-        try:
-            self.id = args[0]
-        except IndexError:
-            pass
-        try:
-            self.__width = args[1]
-        except IndexError:
-            pass
-        try:
-            self.__height = args[2]
-        except IndexError:
-            pass
-        try:
-            self.__x = args[3]
-        except IndexError:
-            pass
-        try:
-            self.__y = args[4]
-        except IndexError:
-            pass
+    def update(self, *args, **kwargs):
+        if args:
+            try:
+                self.id = args[0]
+            except IndexError:
+                pass
+            try:
+                self.__width = args[1]
+            except IndexError:
+                pass
+            try:
+                self.__height = args[2]
+            except IndexError:
+                pass
+            try:
+                self.__x = args[3]
+            except IndexError:
+                pass
+            try:
+                self.__y = args[4]
+            except IndexError:
+                pass
+        else:
+            for k, v in kwargs.items():
+                if k == "id":
+                    self.id = v
+                elif k == "width":
+                    self.__width = v
+                elif k == "height":
+                    self.__height = v
+                elif k == "x":
+                    self.__x = v
+                elif k == "y":
+                    self.__y = v
