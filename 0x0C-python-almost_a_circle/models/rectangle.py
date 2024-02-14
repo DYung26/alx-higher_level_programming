@@ -90,22 +90,22 @@ class Rectangle(Base):
 
     @property
     def width(self):
-    """
-    Getter method for width attribute.
+        """
+        Getter method for width attribute.
 
-    Returns:
-        int: The width of the rectangle.
-    """
+        Returns:
+            int: The width of the rectangle.
+        """
         return self.__width
 
     @width.setter
     def width(self, value):
-    """
-    Setter method for width attribute.
+        """
+        Setter method for width attribute.
 
-    Args:
-        value (int): The new width value for the rectangle.
-    """
+        Args:
+            value (int): The new width value for the rectangle.
+        """
         self.__check(value, "width")
         self.__width = value
 
