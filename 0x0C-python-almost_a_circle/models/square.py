@@ -20,7 +20,8 @@ class Square(Rectangle):
         id (int): The identifier of the square (default is None).
 
     Attributes:
-        All attributes of the Rectangle class, as Square is a subclass of Rectangle.
+        All attributes of the Rectangle class,
+        as Square is a subclass of Rectangle.
 
     Methods:
         __init__: Initializes a new Square instance.
@@ -28,7 +29,8 @@ class Square(Rectangle):
         size (property): Gets the size of the square.
         size (setter): Sets the size of the square.
         update: Updates the Square instance with new values.
-        to_dictionary: Returns the dictionary representation of the Square instance.
+        to_dictionary: Returns the dictionary representation
+        of the Square instance.
     """
 
     def __init__(self, size, x=0, y=0, id=None):
@@ -121,7 +123,8 @@ class Square(Rectangle):
         Returns the dictionary representation of the Square instance.
 
         Returns:
-            dict: A dictionary containing the attributes of the Square instance.
+            dict: A dictionary containing the attributes of the
+            Square instance.
         """
         return {
             'id': self.id,
