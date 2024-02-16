@@ -3,7 +3,8 @@
 Square module
 
 This module defines the Square class, which is a subclass of Rectangle.
-The Square class represents a square shape and inherits attributes and methods from the Rectangle class. It introduces additional methods specific to squares.
+The Square class represents a square shape and inherits attributes and methods
+from the Rectangle class. It introduces additional methods specific to squares.
 """
 from models.rectangle import Rectangle
 
@@ -63,7 +64,8 @@ class Square(Rectangle):
             value (int): The new size of the square.
         """
         attributeName = "width"
-        Rectangle._Rectangle__check(value, attributeName) # super().__check(value, attributeName)
+        Rectangle._Rectangle__check(value, attributeName)
+        # super().__check(value, attributeName)
         self.width = value
         attributeName = "height"
         Rectangle._Rectangle__check(value, attributeName)
