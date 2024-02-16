@@ -88,15 +88,16 @@ class Base:
             list_objs (list): A list of instances.
 
         Note:
-            The file name "Rectangle.json" is hardcoded.
+            The file name "{classname}.json" is hardcoded.
 
         Example:
             save_to_file([instance1, instance2])
         """
-        if list_objs:
-            listObjs = [i.to_dictionary() for i in list_objs]
-            print(cls.__name__)
-            print(listObjs)
+        if list_objs is None:
+            with open(f"{cls.__name__}.json", "w") as file:
+                file.write("[]")
+        else:
+            listObjs = [i.to_dictionary() for i in list_objs
             with open(f"{cls.__name__}.json", "w") as file:
                 file.write(cls.to_json_string(listObjs))
 
