@@ -81,10 +81,10 @@ class Rectangle(Base):
         """
         if not isinstance(value, int):
             raise TypeError(f"{attributeName} must be an integer")
-        if attributeName == "height" or attributeName == "width":
+        if attributeName in ("height", "width":
             if value <= 0:
                 raise ValueError(f"{attributeName} must be > 0")
-        if attributeName == "x" or attributeName == "y":
+        if attributeName in ("x", "y"):
             if value < 0:
                 raise ValueError(f"{attributeName} must be >= 0")
 
@@ -149,7 +149,7 @@ class Rectangle(Base):
             value (int): The new x-coordinate value for the rectangle.
         """
         self.__check(value, "x")
-        self.__x = x
+        self.__x = value
 
     @property
     def y(self):
