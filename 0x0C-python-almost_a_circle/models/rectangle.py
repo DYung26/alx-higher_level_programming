@@ -81,7 +81,7 @@ class Rectangle(Base):
         """
         if not isinstance(value, int):
             raise TypeError(f"{attributeName} must be an integer")
-        if attributeName in ("height", "width":
+        if attributeName in ("height", "width"):
             if value <= 0:
                 raise ValueError(f"{attributeName} must be > 0")
         if attributeName in ("x", "y"):
