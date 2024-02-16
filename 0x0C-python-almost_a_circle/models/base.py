@@ -95,6 +95,8 @@ class Base:
         """
         if list_objs:
             listObjs = [i.to_dictionary() for i in list_objs]
+            print(cls.__name__)
+            print(listObjs)
             with open(f"{cls.__name__}.json", "w") as file:
                 file.write(cls.to_json_string(listObjs))
 
