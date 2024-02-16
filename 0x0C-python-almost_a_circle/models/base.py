@@ -2,21 +2,26 @@
 """
 base module
 
-This module defines the Base class, which serves as the base class for other classes.
-It provides common functionality such as JSON serialization and deserialization.
+This module defines the Base class,
+which serves as the base class for other classes.
+It provides common functionality such as JSON serialization
+and deserialization.
 
 Attributes:
     id (int): The identifier of the instance.
-    __nb_objects (int): A class variable to keep track of the number of instances created.
+    __nb_objects (int): A class variable to keep track of the number
+    of instances created.
 
 Methods:
     __init__: Initializes a new instance of the Base class.
     to_json_string: Converts a list of dictionaries to a JSON-formatted string.
     save_to_file: Saves a list of instances to a file in JSON format.
-    from_json_string: Converts a JSON-formatted string to a list of dictionaries.
+    from_json_string: Converts a JSON-formatted string to
+    a list of dictionaries.
     create: Creates a new instance from a dictionary.
     update: Updates the attributes of an instance.
-    load_from_file: Loads instances from a file and returns a list of instances.
+    load_from_file: Loads instances from a file and
+    returns a list of instances.
 """
 import json
 
@@ -27,16 +32,20 @@ class Base:
 
     Attributes:
         id (int): The identifier of the instance.
-        __nb_objects (int): A class variable to keep track of the number of instances created.
+        __nb_objects (int): A class variable to keep track of
+                            the number of instances created.
 
     Methods:
         __init__: Initializes a new instance of the Base class.
-        to_json_string: Converts a list of dictionaries to a JSON-formatted string.
+        to_json_string: Converts a list of dictionaries to
+                        a JSON-formatted string.
         save_to_file: Saves a list of instances to a file in JSON format.
-        from_json_string: Converts a JSON-formatted string to a list of dictionaries.
+        from_json_string: Converts a JSON-formatted string to
+                          a list of dictionaries.
         create: Creates a new instance from a dictionary.
         update: Updates the attributes of an instance.
-        load_from_file: Loads instances from a file and returns a list of instances.
+        load_from_file: Loads instances from a file and
+                        returns a list of instances.
     """
     __nb_objects = 0
 
@@ -45,7 +54,8 @@ class Base:
         Initializes a new instance of the Base class.
 
         Args:
-            id (int): The identifier of the instance. If not provided, a unique identifier is assigned.
+            id (int): The identifier of the instance.
+                      If not provided, a unique identifier is assigned.
         """
         if id is not None:
             self.id = id
@@ -58,7 +68,8 @@ class Base:
         Converts a list of dictionaries to a JSON-formatted string.
 
         Args:
-            list_dictionaries (list): A list of dictionaries representing instances.
+            list_dictionaries (list): A list of dictionaries representing
+                                      instances.
 
         Returns:
             str: A JSON-formatted string.
@@ -108,10 +119,12 @@ class Base:
         Creates a new instance of the class using a dictionary of attributes.
 
         Args:
-            dictionary (dict): A dictionary containing attributes for the instance.
+            dictionary (dict): A dictionary containing attributes
+                               for the instance.
 
         Returns:
-            cls: A new instance of the class with attributes set from the dictionary.
+            cls: A new instance of the class with attributes set
+                 from the dictionary.
         """
         """args_tuple = ()
         for k, v in dictionary.items():
@@ -123,7 +136,8 @@ class Base:
 
     def update(self, *args, **kwargs):
         """
-        Updates the attributes of an instance using arguments or keyword arguments.
+        Updates the attributes of an instance using
+        arguments or keyword arguments.
 
         Args:
             *args: Variable positional arguments.
@@ -133,7 +147,8 @@ class Base:
             If both args and kwargs are provided, args take precedence.
 
         Example:
-            obj.update(id=10, width=5, height=10) will update id to 10, width to 5, and height to 10.
+            obj.update(id=10, width=5, height=10) will update id to 10,
+            width to 5, and height to 10.
         """
         pass
         """if args:
