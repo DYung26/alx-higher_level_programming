@@ -25,7 +25,8 @@ if __name__ == '__main__':
     cur = conn.cursor()
     cur.execute(
         "SELECT cities.name FROM cities WHERE cities.state_id = "
-        "(SELECT id FROM states WHERE name = \"Texas\")"
+        "(SELECT id FROM states WHERE name = %s) ORDER BY cities.id ASC",
+         (sys.argv[4],)
     )
     state_cities = cur.fetchall()
     city_list = []
