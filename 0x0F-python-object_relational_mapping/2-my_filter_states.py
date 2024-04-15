@@ -23,7 +23,9 @@ if __name__ == '__main__':
         charset="utf8"
     )
     cur = conn.cursor()
-    cur.execute(f"SELECT * FROM states WHERE name = '{sys.argv[4]}' ORDER BY id ASC")
+    cur.execute(
+        f"SELECT * FROM states WHERE name = '{sys.argv[4]}' ORDER BY id ASC"
+    )
     states = cur.fetchall()
 
     for state in states:
