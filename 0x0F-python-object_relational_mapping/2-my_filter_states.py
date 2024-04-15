@@ -24,7 +24,7 @@ if __name__ == '__main__':
     )
     cur = conn.cursor()
     cur.execute(
-        "SELECT * FROM states WHERE name = '{}'"
+        "SELECT * FROM states WHERE name = '{0}'"
         " ORDER BY id ASC".format(sys.argv[4])
     )
     states = cur.fetchall()
