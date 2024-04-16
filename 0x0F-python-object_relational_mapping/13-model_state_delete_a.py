@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""First state via SQLAlchemy"""
+"""Delete states via SQLAlchemy"""
 import sys
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
