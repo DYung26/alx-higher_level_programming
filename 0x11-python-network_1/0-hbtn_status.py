@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 ''' Uses `urllib` to fetch `https://alx-intranet.hbtn.io/status'''
-
 import urllib.request as urllib_req
+
 if __name__ == '__main__':
     with urllib_req.urlopen('https://alx-intranet.hbtn.io/status') as response:
         content_bytes = response.read()
