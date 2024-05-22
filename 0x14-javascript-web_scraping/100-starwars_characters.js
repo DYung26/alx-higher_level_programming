@@ -3,7 +3,6 @@
 const request = require('request');
 const args = process.argv;
 const moviesEndpoint = `https://swapi-api.alx-tools.com/api/films/${args[2]}`;
-const charactersEndpoint = 'https://swapi-api.alx-tools.com/api/people/';
 
 request(`${moviesEndpoint}`, (error, response, body) => {
   if (error) {
