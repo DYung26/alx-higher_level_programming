@@ -2,16 +2,15 @@
 
 const request = require('request');
 const args = process.argv;
-const moviesEndpoint = 'https://swapi-api.alx-tools.com/api/films/';
+const moviesEndpoint = `https://swapi-api.alx-tools.com/api/films/${args[2]}`;
 const charactersEndpoint = 'https://swapi-api.alx-tools.com/api/people/';
 
 request(`${moviesEndpoint}`, (error, response, body) => {
   if (error) {
     return;
   }
-  const movie = JSON.parse(response.body).results[args[2]];
 
-  const charactersArray = movie.characters;
+  const charactersArray = JSON.parse(response.body).characters;
   for (let j = 0; j < charactersArray.length; j++) {
     request(`${charactersArray[j]}`, (error, resp, body) => {
       if (error) {
