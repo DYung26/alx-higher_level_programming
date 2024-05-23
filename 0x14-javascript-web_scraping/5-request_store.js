@@ -10,7 +10,7 @@ request(`${args[2]}`, (error, response, body) => {
   }
   fs.writeFile(`${args[3]}`, `${body}`, 'utf8', (err) => {
     if (err) {
-      return;
+      console.error(err);
     }
   });
 });
