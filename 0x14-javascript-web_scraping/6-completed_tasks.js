@@ -5,6 +5,7 @@ const args = process.argv;
 
 request(`${args[2]}`, (error, response, body) => {
   if (error) {
+    console.error(error);
     return;
   }
   const todosList = JSON.parse(response.body);
